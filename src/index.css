@@ -1,0 +1,17 @@
+/* Mengimpor basis CSS dari Tailwind CSS */
+@tailwind base;
+
+/* Mengimpor komponen-komponen UI dari Tailwind CSS */
+@tailwind components;
+
+/* Mengimpor utilitas Tailwind CSS untuk penggunaan styling cepat */
+@tailwind utilities;
+
+/* Menambahkan aturan dasar untuk proyek Anda di dalam layer 'base' */
+@layer base {
+  /* Mengatur font dasar untuk elemen html */
+  html {
+    /* Menetapkan font 'Montserrat' sebagai font dasar untuk seluruh halaman */
+    font-family: 'Montserrat';
+  }
+}
