@@ -114,7 +114,7 @@ const FAQ = () => {
     <div className="text-[#212121] max-w-4xl mx-auto px-4 py-6 text-center ">
       {/* Judul halaman FAQ */}
       <div className="mt-[111px]">
-        <h1 className="text-[32px] font-semibold leading-[48px] tracking-[0.005em] text-center mb-4">
+        <h1 className="text-[32px] font-[600] leading-[48px] tracking-[0.005em] text-center mb-4">
           Frequently Asked Questions
         </h1>
         <h2 className="text-[20px] font-normal leading-[30px] tracking-[0.005em] text-center mb-6">
@@ -127,23 +127,23 @@ const FAQ = () => {
         {faqData.map((item, index) => (
           <div
             key={index}
-            className="border border-[#5B59E8] rounded-lg overflow-hidden mb-[22px]"
+            className="text-[20px] border border-[#5B59E8] rounded-lg overflow-hidden mb-[22px]"
           >
             {/* Bagian untuk menampilkan pertanyaan dan tanda buka/tutup */}
             <div
-              className={`flex justify-between items-center p-4 cursor-pointer bg-white border-b ${
+              className={`flex justify-between items-center p-4 cursor-pointer bg-white ml-4 ${
                 // Jika pertanyaan ini dibuka, beri highlight
                 openQuestion === index ? "text-blue-500" : ""
               }`}
               onClick={() => toggleQuestion(index)} // Ketika pertanyaan diklik, panggil toggleQuestion
             >
               <span className="font-bold">{item.question}</span>
-              <span>{openQuestion === index ? "–" : "+"}</span> {/* Tampilkan tanda buka atau tutup */}
+              <span className="text-[39px] text-[#845FF1] mr-4">{openQuestion === index ? "–" : "+"}</span> {/* Tampilkan tanda buka atau tutup */}
             </div>
 
             {/* Bagian untuk menampilkan jawaban jika pertanyaan ini terbuka */}
             {openQuestion === index && (
-              <div className="p-4 text-left bg-white text-sm">
+              <div className="p-4 text-[16px] text-left bg-white text-sm">
                 {item.answer}
               </div>
             )}

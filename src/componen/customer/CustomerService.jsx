@@ -1,25 +1,31 @@
-import email from "../asset/email.png"; // Import gambar icon untuk email
-import customer from "../asset/customer.png"; // Import gambar ilustrasi customer service
-import phone from "../asset/phone.png"; // Import gambar icon untuk telepon
+import email from "../asset/email.png"; // Import gambar icon untuk email,telepon,customer service
+import customer from "../asset/customer.png"; //
+import phone from "../asset/phone.png"; //
 
 const CustomerService = () => {
   return (
     <section className="mt-[180px] md:mt-[115px] 2xl:mt-[45px] flex flex-col md:flex-row justify-between items-center px-5 py-10 max-w-6xl mx-auto gap-10 mb-[114px]">
       {/* Container utama dengan styling responsif untuk menampung konten customer service */}
 
-      <div className="md:max-w-xl text-center md:text-left ">
+      <div className="w-full md:w-[773px] h-auto gap-[29px] text-left">
         {/* Div untuk teks utama dan informasi pendukung */}
 
         <div className="mb-5">
-          <h2 className="text-[#212121] text-[32px] font-semibold leading-[48px] text-left decoration-solid">
-            {/* Heading utama dengan warna teks dan ukuran font yang diatur */}
-            Kami Siap Membantu Bisnis <br /> Anda Lebih Maju!
+          <h2 className="text-[#212121] text-[28px] md:text-[32px] font-[600] text-lg leading-[36px] md:leading-[48px]">
+            Kami Siap Membantu Bisnis{" "}
+            <span className="hidden lg:inline">
+              <br />
+            </span>{" "}
+            Anda Lebih Maju!
           </h2>
         </div>
 
-        <p className="text-[#212121] leading-relaxed mb-6 text-left">
+        <p className="text-[#212121] leading-relaxed mb-6 text-[16px] md:text-[18px]">
           {/* Paragraf penjelasan singkat mengenai layanan yang ditawarkan */}
-          Butuh informasi lebih lanjut tentang produk atau solusi kami? <br />{" "}
+          Butuh informasi lebih lanjut tentang produk atau solusi kami?{" "}
+          <span className="hidden lg:inline">
+            <br />
+          </span>{" "}
           Tim Rekan AI siap menjawab pertanyaan Anda dengan cepat dan
           profesional.
         </p>
@@ -69,7 +75,7 @@ const CustomerService = () => {
         <img
           src={customer} // Menampilkan gambar customer service
           alt="Customer Service" // Teks alternatif untuk gambar customer service
-          className="max-w-full h-auto" // Styling untuk memastikan gambar berskala dengan baik
+          className="w-full md:w-[400px] lg:w-[500px] max-w-xs sm:max-w-sm md:max-w-md h-auto object-contain"
         />
       </div>
     </section>

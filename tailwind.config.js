@@ -10,7 +10,9 @@ export default {
   theme: {
     // Bagian untuk memperluas (extend) tema Tailwind. Anda bisa menambahkan tema atau konfigurasi lain di sini.
     extend: {
-      // Misalnya, Anda bisa menambahkan warna kustom, font, spacing, dan lainnya di dalam bagian ini
+      colors: {
+        customGrey: 'rgba(212, 218, 228, 0.12)',
+      }
     },
   },
   // Daftar plugin yang akan digunakan oleh Tailwind
