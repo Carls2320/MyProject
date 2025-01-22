@@ -1,11 +1,11 @@
-import bgImage from "../asset/image 10.png";
+import { img10 } from "../asset";
 
 const ContactForm = () => {
   return (
     <div
       className="flex min-h-screen items-center justify-center p-5 text-white overflow-hidden rounded-tl-[80px] rounded-tr-[80px]"
       style={{
-        background: `linear-gradient(45deg, #DC016866 5%, rgba(91, 89, 232, 1) 100%), url(${bgImage})`,
+        background: `linear-gradient(45deg, #DC016866 5%, rgba(91, 89, 232, 1) 100%), url(${img10})`,
         backgroundSize: "100% auto", // Memastikan gambar mengisi seluruh elemen
         backgroundPosition: "center", // Menempatkan gambar di tengah
         backgroundRepeat: "no-repeat", // Menghindari gambar terulang

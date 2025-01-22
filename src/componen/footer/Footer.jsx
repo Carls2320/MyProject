@@ -1,12 +1,5 @@
 // Import gambar-gambar yang digunakan dalam komponen Footer
-import nvdia from "../asset/nvidia.png"; // Gambar logo NVIDIA sebagai partner
-import kmn from "../asset/kementerian.png"; // Gambar logo Kementerian sebagai partner
-import kominfo from "../asset/kominfo.png"; // Gambar logo Kominfo sebagai partner
-import ojk from "../asset/ojk.png"; // Gambar logo OJK sebagai partner
-import facebook from "../asset/facebook.png"; // Gambar logo Facebook untuk ikon media sosial
-import x from "../asset/x.png"; // Gambar logo X (dulu Twitter) untuk ikon media sosial
-import instagram from "../asset/instagram.png"; // Gambar logo Instagram untuk ikon media sosial
-import frame from "../asset/Component 11.png"; // Gambar logo utama perusahaan
+import { nvidia,kmn,kominfo,ojk,facebook,x,instagram,component11 } from "../asset"; // Gambar logo NVIDIA sebagai partner
 
 function Footer() {
   return (
@@ -16,7 +9,7 @@ function Footer() {
         {/* Kolom 1: Logo perusahaan */}
         <div className="mb-5 sm:mb-0">
           <img
-            src={frame} // Gambar logo perusahaan
+            src={component11} // Gambar logo perusahaan
             alt="Logo"
             className="max-w-[200px] w-[50.3px] h-[40.24px] sm:mx-0"
           />
@@ -64,7 +57,7 @@ function Footer() {
         </div>
 
         {/* Kolom 4: Solusi yang ditawarkan */}
-        <div className="flex-1 mb-5 sm:mb-0 sm:pl-0 md:mx-[10px] 2xl:mx-[-120px]">
+        <div className="flex-1 mb-5 sm:mb-0 sm:pl-0 md:mx-[10runrpx] 2xl:mx-[-120px]">
           <h4 className="text-base font-semibold mb-4">Solusi Kami</h4>
           <ul className="space-y-4 text-[18px]">
             <li>Personal</li> {/* Solusi untuk individu */}
@@ -87,7 +80,7 @@ function Footer() {
         <div className="mb-5 sm:mb-0 sm:pl-0">
           <div className="mb-4">
             <img
-              src={nvdia} // Gambar logo partner NVIDIA
+              src={nvidia} // Gambar logo partner NVIDIA
               alt="NVIDIA Inception Premier Member"
               className="w-[221px] h-[83px]"
             />

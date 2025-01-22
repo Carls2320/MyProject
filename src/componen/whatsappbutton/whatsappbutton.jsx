@@ -1,4 +1,4 @@
-import WaButtons from '../asset/Whatsapp22.png';  // Mengimpor gambar ikon WhatsApp
+import { wabutton } from '../asset';
 
 const WhatsAppButton = () => {
   return (
@@ -6,7 +6,7 @@ const WhatsAppButton = () => {
       {/* Tombol WhatsApp */}
       <img
         className="w-10 h-10 md:w-12 md:h-12"  // Menentukan ukuran ikon WhatsApp
-        src={WaButtons}  // Gambar yang diimpor
+        src={wabutton}  // Gambar yang diimpor
         alt="WhatsApp"  // Deskripsi gambar jika gambar gagal dimuat
       />
     </div>

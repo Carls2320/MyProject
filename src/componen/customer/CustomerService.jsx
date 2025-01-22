@@ -1,6 +1,4 @@
-import email from "../asset/email.png"; // Import gambar icon untuk email,telepon,customer service
-import customer from "../asset/customer.png"; //
-import phone from "../asset/phone.png"; //
+import { email,phone,customer } from "../asset"; // Import gambar icon untuk email,telepon,customer service
 
 const CustomerService = () => {
   return (

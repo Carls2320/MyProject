@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import Logo1 from '../asset/logo.png';  // Mengimpor logo
-import search from '../asset/search.png';  // Mengimpor ikon pencarian
-import row from '../asset/arrow.png';  // Mengimpor ikon panah untuk dropdown
+import { Logo1,search,row } from '../asset';  // Mengimpor logo
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);  // Menyimpan status menu mobile (terbuka atau tertutup)
