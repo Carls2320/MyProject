@@ -114,7 +114,7 @@ const FAQ = () => {
     <div className="text-[#212121] max-w-4xl mx-auto px-4 py-6 text-center ">
       {/* Judul halaman FAQ */}
       <div className="mt-[111px]">
-        <h1 className="text-[32px] font-[600] leading-[48px] tracking-[0.005em] text-center mb-4">
+        <h1 className="text-[32px] font-[550] leading-[48px] tracking-[0.005em] text-center mb-4">
           Frequently Asked Questions
         </h1>
         <h2 className="text-[20px] font-normal leading-[30px] tracking-[0.005em] text-center mb-6">

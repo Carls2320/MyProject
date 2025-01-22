@@ -11,7 +11,7 @@ const CustomerService = () => {
         {/* Div untuk teks utama dan informasi pendukung */}
 
         <div className="mb-5">
-          <h2 className="text-[#212121] text-[28px] md:text-[32px] font-[600] text-lg leading-[36px] md:leading-[48px]">
+          <h2 className="text-[#212121] text-[28px] md:text-[32px] font-[550] text-lg leading-[36px] md:leading-[48px]">
             Kami Siap Membantu Bisnis{" "}
             <span className="hidden lg:inline">
               <br />

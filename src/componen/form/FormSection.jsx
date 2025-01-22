@@ -15,7 +15,7 @@ const ContactForm = () => {
         {/* Bagian Kiri */}
         <div className="flex-1 p-5 mb-10 lg:mb-auto mt-20">
           {/* Judul utama */}
-          <h2 className="text-[32px] font-[600] leading-[48px] tracking-[0.005em] text-left mb-[39px] 2xl:text-[36px]">
+          <h2 className="text-[32px] font-[550] leading-[48px] tracking-[0.005em] text-left mb-[39px] 2xl:text-[36px]">
             Isi formulir di samping ini dan kami akan menghubungi Anda secepat
             mungkin
           </h2>
