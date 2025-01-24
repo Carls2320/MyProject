@@ -30,8 +30,8 @@ const FAQ = () => {
       question: "Apa saja produk yang ditawarkan oleh Rekan AI?",
       answer: (
         <div>
-          <p>Kami menawarkan beberapa produk unggulan, termasuk:</p>
-          <ul className="list-disc list-inside">
+          <p className="mb-1">Kami menawarkan beberapa produk unggulan, termasuk:</p>
+          <ul className="list-decimal list-inside space-y-1">
             <li>
               Rekan Doku: Solusi autentikasi dan manajemen dokumen digital.
             </li>
@@ -49,8 +49,8 @@ const FAQ = () => {
       question: "Bagaimana cara menghubungi tim Rekan AI?",
       answer: (
         <div>
-          <p>Anda dapat menghubungi kami melalui:</p>
-          <ul className="list-disc list-inside">
+          <p className="mb-1">Anda dapat menghubungi kami melalui:</p>
+          <ul className="list-decimal list-inside space-y-1">
             <li>Email: support@rekanai.com</li>
             <li>Telepon: (+62) 123-4567-890</li>
             <li>WhatsApp: (+62) 812-3456-7890</li>
@@ -114,7 +114,7 @@ const FAQ = () => {
     <div className="text-[#212121] max-w-4xl mx-auto px-4 py-6 text-center ">
       {/* Judul halaman FAQ */}
       <div className="mt-[111px]">
-        <h1 className="text-[32px] font-[550] leading-[48px] tracking-[0.005em] text-center mb-4">
+        <h1 className="text-[32px] font-[505] leading-[48px] tracking-[0.005em] text-center mb-4">
           Frequently Asked Questions
         </h1>
         <h2 className="text-[20px] font-normal leading-[30px] tracking-[0.005em] text-center mb-6">
@@ -123,27 +123,27 @@ const FAQ = () => {
       </div>
 
       {/* Bagian FAQ */}
-      <div className="space-y-4 mb-[110px] mt-[60px] ">
+      <div className="space-y-[22px] mb-[110px] mt-[60px]">
         {faqData.map((item, index) => (
           <div
             key={index}
-            className="text-[20px] border border-[#5B59E8] rounded-lg overflow-hidden mb-[22px]"
+            className="text-[20px] border border-[#5B59E8] p-[5px] rounded-[12px] overflow-hidden "
           >
             {/* Bagian untuk menampilkan pertanyaan dan tanda buka/tutup */}
             <div
-              className={`flex justify-between items-center p-4 cursor-pointer bg-white ml-4 ${
+              className={`flex justify-between items-center cursor-pointer bg-white ml-4 ${
                 // Jika pertanyaan ini dibuka, beri highlight
                 openQuestion === index ? "text-blue-500" : ""
               }`}
               onClick={() => toggleQuestion(index)} // Ketika pertanyaan diklik, panggil toggleQuestion
             >
-              <span className="font-bold">{item.question}</span>
+              <span className="font-[550]">{item.question}</span>
               <span className="text-[39px] text-[#845FF1] mr-4">{openQuestion === index ? "–" : "+"}</span> {/* Tampilkan tanda buka atau tutup */}
             </div>
 
             {/* Bagian untuk menampilkan jawaban jika pertanyaan ini terbuka */}
             {openQuestion === index && (
-              <div className="p-4 text-[16px] text-left bg-white text-sm">
+              <div className="p-4 text-[16px] ml-4 text-left bg-white text-sm">
                 {item.answer}
               </div>
             )}

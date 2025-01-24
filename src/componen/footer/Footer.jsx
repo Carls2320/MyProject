@@ -1,5 +1,5 @@
 // Import gambar-gambar yang digunakan dalam komponen Footer
-import { nvidia,kmn,kominfo,ojk,facebook,x,instagram,component11 } from "../asset"; // Gambar logo NVIDIA sebagai partner
+import { nvidia,kmn,kominfo,ojk,facebook,x,instagram,component11 } from "../asset"; // Gambar logo sebagai partner dan logo medsos dan logo rekanai
 
 function Footer() {
   return (
@@ -26,7 +26,7 @@ function Footer() {
               </span>
             </p>
           </div>
-          <p className="mb-4 text-[18px]">
+          <p className="mb-[39px] text-[18px]">
             Jl. Anggrek No.6, Sawah Lama, Kec. Ciputat, Kota Tangerang Selatan,
             Banten 15413
           </p>

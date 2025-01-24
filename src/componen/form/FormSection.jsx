@@ -3,43 +3,43 @@ import { img10 } from "../asset";
 const ContactForm = () => {
   return (
     <div
-      className="flex min-h-screen items-center justify-center p-5 text-white overflow-hidden rounded-tl-[80px] rounded-tr-[80px]"
+      className="flex min-h-screen items-center justify-center p-5 text-white rounded-tl-[80px] rounded-tr-[80px]"
       style={{
-        background: `linear-gradient(45deg, #DC016866 5%, rgba(91, 89, 232, 1) 100%), url(${img10})`,
-        backgroundSize: "100% auto", // Memastikan gambar mengisi seluruh elemen
-        backgroundPosition: "center", // Menempatkan gambar di tengah
-        backgroundRepeat: "no-repeat", // Menghindari gambar terulang
+        background: `linear-gradient(45deg, #DC016866 15%, rgba(91, 89, 232, 1),rgba(91, 89, 232, 1)), url(${img10})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="flex flex-col lg:flex-row items-start w-full max-w-6xl mt-[-40px] 2xl:max-w-7xl 2xl:px-20">
+      <div className="flex flex-col lg:flex-row items-start w-full max-w-[90%] 2xl:max-w-[100%] 2xl:max-h-[100%] sm:mt-[79px] sm:mb-[79px] 2xl:mt-[-125px] 2xl:px-10">
         {/* Bagian Kiri */}
-        <div className="flex-1 p-5 mb-10 lg:mb-auto mt-20">
+        <div className="flex-1 p-5 mb-10 lg:mb-0 sm mt-20 2xl:mt-28">
           {/* Judul utama */}
-          <h2 className="text-[32px] font-[550] leading-[48px] tracking-[0.005em] text-left mb-[39px] 2xl:text-[36px]">
+          <h2 className="text-[32px] font-[550] leading-[48px] tracking-[0.005em] text-left mb-[39px] 2xl:text-[36px] 2xl:leading-[52px]">
             Isi formulir di samping ini dan kami akan menghubungi Anda secepat
             mungkin
           </h2>
 
           {/* Deskripsi tambahan */}
-          <p className="text-[18px] font-[400] leading-[30px] tracking-[0.005em] text-left mb-6 2xl:text-[20px]">
+          <p className="text-[18px] font-[400] leading-[30px] tracking-[0.005em] text-left mb-6 2xl:text-[20px] 2xl:leading-[34px]">
             Kami percaya bahwa kolaborasi adalah kunci kesuksesan. Hubungi kami
             hari ini, dan mari wujudkan masa depan bisnis Anda bersama Rekan AI!
           </p>
         </div>
 
         {/* Bagian Form */}
-        <div className="flex-1 bg-white text-[#212121] rounded-2xl p-8 shadow-lg border-[8px] border-pink-300 mx-auto lg:mx-0 lg:ml-12 w-full max-w-lg mt-[79px] mb-[79px] 2xl:max-w-xl 2xl:px-12">
+        <div className="flex-1 bg-white text-[#212121] rounded-[25px] 2xl:mt-[100px] p-[40px] border-[8px] border-[#F086A4] w-full 2xl:px-[60px] 2xl:py-[50px]">
           {/* Judul form */}
-          <h3 className="text-xl font-bold mb-4 text-[#212121] 2xl:text-2xl">
+          <h3 className="text-[32px] font-[550] mb-4 text-[#212121] 2xl:text-[28px] 2xl:mb-6">
             Hubungi Tim Terbaik Kami
           </h3>
           {/* Deskripsi form */}
-          <p className="mb-6 text-[#212121] 2xl:text-lg">
+          <p className="mb-6 text-[#212121] 2xl:text-[18px]">
             Silakan isi data diri Anda pada formulir di bawah ini
           </p>
 
           {/* Formulir input */}
-          <form className="flex flex-col gap-4">
+          <form className="flex flex-col gap-4 px-2">
             {/* Input Nama */}
             <div>
               <label className="text-[#6B5CEA]">Nama (Tanpa Gelar)*</label>
@@ -47,7 +47,7 @@ const ContactForm = () => {
                 type="text"
                 placeholder="Masukkan nama Anda"
                 required
-                className="w-full mt-1 p-4 border border-[#5B59E8]  rounded-lg focus:ring-2 focus:ring-indigo-500"
+                className="w-full mt-1 p-4 border border-[#5B59E8] rounded-lg focus:ring-2 focus:ring-[#5B59E8] 2xl:p-5"
               />
             </div>
 
@@ -58,7 +58,11 @@ const ContactForm = () => {
                 type="tel"
                 placeholder="Masukkan nomor telepon Anda"
                 required
-                className="w-full mt-1 p-4 border border-[#5B59E8]  rounded-lg focus:ring-2 focus:ring-indigo-500"
+                className="w-full mt-1 p-4 border border-[#5B59E8] rounded-lg focus:ring-2 focus:ring-[#5B59E8] 2xl:p-5"
+                pattern="[0-9]*"
+                onInput={(e) => {
+                  e.target.value = e.target.value.replace(/[^0-9]/g, "");
+                }}
               />
             </div>
 
@@ -69,34 +73,51 @@ const ContactForm = () => {
                 type="email"
                 placeholder="Masukkan email Anda"
                 required
-                className="w-full mt-1 p-4 border border-[#5B59E8]  rounded-lg focus:ring-2 focus:ring-indigo-500"
+                className="w-full mt-1 p-4 border border-[#5B59E8] rounded-lg focus:ring-2 focus:ring-[#5B59E8] 2xl:p-5"
               />
             </div>
 
             {/* Input Nama Organisasi */}
             <div>
-              <label className="text-[#6B5CEA] ">
+              <label className="text-[#6B5CEA]">
                 Nama Organisasi/Perusahaan
               </label>
               <input
                 type="text"
                 placeholder="Masukkan nama organisasi/perusahaan Anda"
-                className="w-full mt-1 p-4 border border-[#5B59E8]  rounded-lg focus:ring-2 focus:ring-indigo-500"
+                className="w-full mt-1 p-4 border border-[#5B59E8] rounded-lg focus:ring-2 focus:ring-[#5B59E8] 2xl:p-5"
               />
             </div>
 
             {/* Dropdown Pilih Kebutuhan */}
-            <div>
+            <div className="relative">
               <label className="text-[#6B5CEA]">Pilih Kebutuhan</label>
               <select
                 required
-                className="w-full mt-1 p-4 border border-[#5B59E8]  rounded-lg focus:ring-2 focus:ring-indigo-500"
+                className="appearance-none w-full mt-1 p-4 border border-[#5B59E8] rounded-lg focus:ring-2 focus:ring-[#5B59E8] 2xl:p-5"
               >
                 <option value="">Pilih kebutuhan Anda</option>
                 <option value="konsultasi">Konsultasi</option>
                 <option value="pelatihan">Pelatihan</option>
                 <option value="pengembangan">Pengembangan</option>
               </select>
+              {/* Tanda panah kustom */}
+              <div className="absolute inset-y-0 right-5 flex items-center pointer-events-none">
+                <svg
+                  className="w-6 text-[#5B59E8]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
             </div>
 
             {/* Checkbox Verifikasi */}
@@ -112,7 +133,7 @@ const ContactForm = () => {
             {/* Tombol Kirim */}
             <button
               type="submit"
-              className="bg-indigo-500 hover:bg-indigo-600 text-white  py-3 px-6 rounded-lg shadow-md transition-all w-[173px] pr-6"
+              className="bg-indigo-500 hover:bg-indigo-600 text-white py-3 px-6 rounded-lg shadow-md transition-all w-[173px] 2xl:w-[200px] 2xl:py-4"
             >
               Kirim Pesan
             </button>

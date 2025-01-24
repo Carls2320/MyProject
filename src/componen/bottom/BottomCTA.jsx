@@ -5,7 +5,7 @@ const BottomCTA = () => {
     <section className="w-full bg-white text-center py-10 mb-[113px]">
       {/* Bagian ini untuk menampilkan teks yang memberi tahu pengguna bahwa mereka bisa menghubungi jika masih ada pertanyaan */}
       <div className="flex flex-wrap justify-center gap-2">
-        <h3 className="text-[#212121] text-center text-[32px] font-[600] leading-[48px] tracking-[0.005em]">
+        <h3 className="text-[#212121] text-center text-[32px] font-[550] leading-[48px] tracking-[0.005em]">
           Masih punya pertanyaan seputar
         </h3>
 
@@ -14,7 +14,7 @@ const BottomCTA = () => {
           <span className="bg-[#dc0168] bg-[length:100%] rounded-[18px] text-[#ffffff] px-9 py-2 inline-block mr-[5px]">
             #Rekan AI
           </span>
-          <span className="font-semibold ml-1">?</span>
+          <span className="font-semibold  ml-1">?</span>
         </h3>
       </div>
       
